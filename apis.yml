@@ -1,8 +1,26 @@
 aid: cyrus-biotechnology
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cyrus-biotechnology.png
 name: Cyrus Biotechnology
-description: 'Cyrus Biotechnology is a company surfaced as a portfolio company of trinity-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: biotech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Cyrus Biotechnology is a Seattle-based protein-design and drug-discovery company building
+  novel biologics for serious unmet medical needs by re-engineering existing proteins with a tight loop
+  between computational modeling and lab testing. Its flagship product, Cyrus Bench, is a cloud-based
+  protein modeling and structure-prediction platform that packages the Rosetta software suite (alongside
+  deep-learning tools such as AlphaFold, OpenFold, RoseTTAFold and ProteinMPNN) behind a browser-based
+  interface for homology modeling, protein/protein and enzyme/ligand interface design, protein stabilization,
+  protein/ligand and protein/protein docking, and X-ray molecular replacement. Cyrus Bench is delivered as
+  a hosted web application with user documentation rather than a public developer REST API; the company is
+  backed by Trinity Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/cyrus-biotechnology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Biotech
+- Protein Engineering
+- Drug Discovery
+- Structural Biology
+- Protein Design
+- Molecular Modeling
+- Bioinformatics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cyrus-biotechnology-domain-security.yml
 - type: Website
   url: https://cyrusbio.com
+- type: Documentation
+  url: https://support.cyrusbio.com
+- type: GitHubOrganization
+  url: https://github.com/CyrusBiotechnology
+- type: Platform
+  url: https://cyrusbio.com/platform/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
